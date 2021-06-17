@@ -25,7 +25,7 @@ More info can be found in spotify documentation: https://developer.spotify.com/d
 
 ## Database
 
-The results are entered into SQL database:
+The results are entered into SQL database automatically:
 
 | artist  | song | genre | recommendations | 
 | ---------- | ----------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -38,14 +38,14 @@ The results are entered into SQL database:
 - search via API for entered artist and extract artistID from returned json file
 - search for songID of entered song, same procedure as with artist
 - list available genres via API call and ask for genre
-- for getting recommendations at first you have to request an access token and authenticate, it's done automatically by function
+- for getting recommendations, at first you have to request an access token and authenticate, it's done automatically by a function
 - after successful request response, data are saved into sql database
 
 ## Acknowledgments
 Base of my code is from:
 - https://github.com/codingforentrepreneurs/30-Days-of-Python/tree/master/tutorial-reference/Day%2019
 
-Things which I added are:
+Things which I added on top of the code mentioned line above are:
 - getting inputs from user
 - searching for artist/song id and parsing through json file
 - genres search
